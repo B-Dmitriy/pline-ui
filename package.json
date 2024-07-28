@@ -36,5 +36,6 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:B-Dmitriy/pline-ui.git"
-  }
+  },
+  "repositoryUrl": "git@github.com:B-Dmitriy/pline-ui.git"
 }
