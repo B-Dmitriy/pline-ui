@@ -2,7 +2,7 @@
 import Avatar from './components/Avatar/PLAvatar.vue'
 
 const onAvatarClick = () => {
-  alert('avatarClick')
+  alert('avatarClick!')
 }
 </script>
 
