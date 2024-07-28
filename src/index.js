@@ -1,0 +1,1 @@
+export { Avatar } from './components/Avatar/PLAvatar.vue';
