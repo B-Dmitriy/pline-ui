@@ -15,8 +15,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ">=20.8.1"
-      - name: ci check
-        run: npm ci
       - name: build
         run: npm run build
       - name: release
