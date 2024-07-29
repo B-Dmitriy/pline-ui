@@ -11,6 +11,7 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: setup node
         uses: actions/setup-node@v4
         with:
@@ -18,8 +19,8 @@ jobs:
       - name: install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
-      - name: install deps
+          version: 9
+      - name: install dependencies
         run: pnpm install
       - name: build
         run: pnpm build
