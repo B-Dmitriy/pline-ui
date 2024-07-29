@@ -11,14 +11,15 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - name: Setup node
+      - name: setup node
         uses: actions/setup-node@v4
         with:
           node-version: ">=20.8.1"
-      - name: Build
+      - name: ci check
         run: npm ci
+      - name: build
         run: npm run build
-      - name: Release
+      - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
