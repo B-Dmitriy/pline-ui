@@ -15,8 +15,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ">=20.8.1"
+      - name: install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - name: install deps
+        run: pnpm install
       - name: build
-        run: npm run build
+        run: pnpm build
       - name: release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
