@@ -1,1 +1,5 @@
-export { Avatar } from './components/PLTextArea/PLTextarea.vue';
+import PLTextarea from './components/PLTextArea/PLTextarea.vue';
+
+export {
+    PLTextarea
+}

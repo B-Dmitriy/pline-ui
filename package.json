@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "type": "module",
+  "files": ["src"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +17,9 @@
   },
   "dependencies": {
     "vue": "3.4.29"
+  },
+  "peerDependencies": {
+    "vue": ">=3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.6.1",
