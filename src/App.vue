@@ -1,9 +1,17 @@
 <script setup>
+import PLTextArea from './components/PLTextArea/PLTextarea.vue'
 import Avatar from './components/Avatar/PLAvatar.vue'
+import { defineModel } from 'vue'
 
 const onAvatarClick = () => {
   alert('avatarClick!')
 }
+
+const taData = defineModel({
+  default: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, deleniti."
+})
+
+// const formData = Object.fromEntries(new FormData(document.querySelector('form')).entries());
 </script>
 
 <template>
@@ -20,6 +28,12 @@ const onAvatarClick = () => {
       size="large"
       @click="onAvatarClick"
     />
+    <form id="form" action="/" method="POST" >
+      <PLTextArea label="Yashers"></PLTextArea>
+      <PLTextArea name="testovoe_name" v-model="taData"></PLTextArea>
+      <PLTextArea name="testovoe_name_2" error="test error message"></PLTextArea>
+      <input type="submit" />
+    </form>
   </main>
 </template>
 
