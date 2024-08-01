@@ -1,1 +1,1 @@
-export { Avatar } from './components/Avatar/PLAvatar.vue';
+export { Avatar } from './components/PLTextArea/PLTextarea.vue';
